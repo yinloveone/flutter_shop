@@ -10,7 +10,6 @@ Future request(url,{formData}) async{
   Response response;
   Dio dio = new Dio();
   dio.options.contentType=ContentType.parse("application/x-www-form-urlencoded").toString();
- // var formData={'lon':'115.02932','lat':'35.76189'};
   if(formData == null){
      response = await dio.post(servicePath[url]);
   }else{
